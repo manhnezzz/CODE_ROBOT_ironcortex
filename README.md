@@ -1,27 +1,29 @@
-# 🤖 Robot Điều Khiển PS2 | FPTU AI & Robotics Challenge 2025
+# 🤖 IRONCORTEX – THPT LÊ HỒNG PHONG
 
-Đây là repository chính thức của đội [Tên đội] cho vòng Chung kết cuộc thi **FPTU AI & Robotics Challenge 2025**.  
-Dự án tập trung vào việc **điều khiển robot bằng tay cầm PS2**, sử dụng **mạch VIA Maker** và lập trình điều khiển chính xác các mô-đun robot.
-
----
-
-## 🎮 Mục tiêu dự án
-
-Lập trình các hành vi robot thông qua tay cầm PS2, sử dụng thư viện `PS2_controller.h`, đồng thời:
-- Điều khiển di chuyển bằng Joystick
-- Điều khiển tốc độ cao khi nhấn PSB_R2
-- Kết nối ổn định giữa tay cầm và mạch VIA
-- Phát triển thêm các tính năng cảm biến và servo
+## FPTU AI & ROBOTICS CHALLENGE 2025
+**Thử thách: Robot Nông Nghiệp Bền Vững**
 
 ---
 
-## 🗂️ Cấu trúc thư mục
+### 📌 Giới thiệu
+Đây là kho mã nguồn điều khiển robot của **đội IroncorteX**, đại diện trường **THPT Lê Hồng Phong**, tham gia vòng chung kết cuộc thi **FPTU AI & Robotics Challenge 2025**. Dự án tập trung vào phát triển hệ thống điều khiển robot sử dụng **ESP32** và tay cầm **PS2**, tối ưu cho các nhiệm vụ:
 
-```bash
-/
-├── main.ino                # Chương trình chính
-├── PS2_controller.h        # Điều khiển tay cầm PS2
-├── motors.h                # Điều khiển động cơ
-├── cambien.h               # Điều khiển cảm biến vật cản (mới)
-├── servos.h                # Điều khiển servo (mới)
-├── README.md               # Hồ sơ GitHub (bạn đang đọc đây)
+- Gắp và vận chuyển Đất – Hạt giống
+- Sản xuất và thu hoạch Nông sản tại Nhà kính
+- Vận chuyển Nông sản về Đòn gánh
+- Leo trụ cân bằng năng lượng ở cuối trận
+
+---
+
+### ⚙️ Công nghệ & phần cứng sử dụng
+
+- **Vi điều khiển**: ESP32 DevKit v1
+- **Tay cầm điều khiển**: PS2 Wireless Controller
+- **Động cơ**: 4x DC Motor 12V 555 + 2x Servo MG996
+- **Nguồn**: Pin Lipo 3S – 3000mAh (12V)
+- **Ngôn ngữ lập trình**: Arduino C/C++
+
+---
+
+### 📂 Cấu trúc thư mục
+
