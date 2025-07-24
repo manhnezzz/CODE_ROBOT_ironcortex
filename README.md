@@ -17,17 +17,6 @@ Trọng tâm chính của chúng tôi là phát triển **hệ thống điều k
 
 ---
 
-### 📌 Mục tiêu kỹ thuật
-
-- ✅ Điều khiển chính xác bằng tay cầm PS2
-- ✅ Code phân tách theo module rõ ràng: PS2, motors, servo, cảm biến
-- ✅ Đảm bảo kết nối ổn định giữa tay cầm PS2 và mạch VIA ESP32
-- ✅ Tăng tốc xử lý phản hồi (không delay đầu vào tay cầm)
-- ✅ Ghi lại quá trình phát triển theo từng bước có kiểm chứng
-
----
-
-
 ### 🔁 Các bước phát triển hệ thống phần mềm
 
 #### ✅ Bước 1: Kế thừa bộ mã nguồn mẫu `makerbot-2025-ps2-motor-test`
