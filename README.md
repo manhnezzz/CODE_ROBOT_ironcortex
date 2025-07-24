@@ -27,19 +27,6 @@ Trọng tâm chính của chúng tôi là phát triển **hệ thống điều k
 
 ---
 
-### ⚙️ Công nghệ sử dụng
-
-| Thành phần       | Mô tả                                                           |
-|------------------|------------------------------------------------------------------|
-| Vi điều khiển     | VIA-B (ESP32 DevKit V1)                                          |
-| Tay cầm           | PS2 wireless controller                                          |
-| Motor             | 4x DC 12V loại 555 (Max 1500 RPM)                                |
-| Servo             | MG996R (2x 180 độ, 2x 360 độ)                                    |
-| Nguồn             | Pin Lipo 3S, tối đa 12V – 3000mAh                                |
-| IDE               | Arduino IDE (thư viện PS2X, Servo,...)                           |
-| Ngôn ngữ          | C/C++ Arduino                                                    |
-
----
 
 ### 🔁 Các bước phát triển hệ thống phần mềm
 
