@@ -89,5 +89,4 @@ Link tham khảo: [https://github.com/makerviet/via-k12maker/tree/release-2025/f
 
 ---
 
-### 📂 Cấu trúc thư mục dự án
 
