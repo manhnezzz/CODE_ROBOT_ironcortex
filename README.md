@@ -96,6 +96,12 @@ Thay vì ra lệnh cho servo đi thẳng đến vị trí đích, hàm `moveServ
 
 ### 3️⃣ Thuật toán Hãm Motor bằng Ngắn mạch Mức cao
 **Thuật toán:**  
-Khi người điều khiển nhả nút nâng/hạ, thay vì chỉ ngắt điện (để motor quay tự do), chương t
+Khi người điều khiển nhả nút nâng/hạ, thay vì chỉ ngắt điện (để motor quay tự do), chương trình thiết lập **cả hai chân điều khiển motor** trên mạch PCA9685 ở mức **logic cao (PWM = 4095)**.
 
+**Phân tích:** Điều này tạo ra trạng thái **ngắn mạch hai đầu motor DC**. Dòng điện cảm ứng (back-EMF) sinh ra khi motor đang quay tạo lực cản từ trường mạnh, giúp motor **dừng lại gần như ngay lập tức**.
 
+- **Điểm mạnh:** Tạo lực hãm cực kỳ hiệu quả mà không cần phanh cơ khí, giúp tiết kiệm chi phí, không gian và độ phức tạp. Giữ cơ cấu nâng hạ không bị trôi xuống.  
+- **Điểm yếu:** Có thể gây dòng điện tăng vọt trong chốc lát, đòi hỏi driver và pin phải đủ tốt để chịu được.  
+- **Lý do sử dụng:** Đây là giải pháp phần mềm **thông minh và tiết kiệm** để giải quyết bài toán cơ khí khó: **làm sao dừng và giữ một cơ cấu nặng chính xác mà không cần phanh cơ.**
+
+---
