@@ -64,5 +64,38 @@ Link tham khảo: [https://github.com/makerviet/via-k12maker/tree/release-2025/f
   - Giảm độ phức tạp của `main.ino`
 
 ---
+## 📑 Phân tích các Thuật toán chính
+
+Để giải quyết các vấn đề thực tiễn, **Ban Lập trình** đã phát triển và áp dụng nhiều thuật toán độc đáo:
+
+---
+
+### 1️⃣ Thuật toán Đảm bảo Kết nối Tay cầm PS2
+**Thuật toán:**  
+Một quy trình khởi tạo được thiết kế để robot chỉ bắt đầu hoạt động khi đã có kết nối vững chắc với tay cầm. Chương trình sẽ dò tìm tay cầm trong một vòng lặp (10 lần). Nếu sau 10 lần vẫn thất bại, mạch VIA sẽ **tự động reset** và bắt đầu lại toàn bộ quá trình.
+
+**Phân tích:** Đây là một cơ chế **fail-safe**. Nó ngăn chặn tình trạng chương trình bị “treo” hoặc robot chạy mà không có điều khiển – một lỗi rất nguy hiểm trong thi đấu.
+
+- **Điểm mạnh:** Tăng độ tin cậy lên mức tối đa, đảm bảo robot luôn sẵn sàng và có thể điều khiển ngay khi vào trận.  
+- **Điểm yếu:** Thời gian khởi động robot có thể lâu hơn một chút nếu kết nối ban đầu không tốt.  
+- **Lý do sử dụng:** Trong môi trường thi đấu có nhiều nhiễu sóng, việc đảm bảo kết nối ổn định là yếu tố sống còn, quyết định sự thành bại của robot.
+
+---
+
+### 2️⃣ Thuật toán Điều khiển Servo Mượt mà (`moveServoSmooth`)
+**Thuật toán:**  
+Thay vì ra lệnh cho servo đi thẳng đến vị trí đích, hàm `moveServoSmooth` **chia nhỏ quãng đường di chuyển** thành nhiều bước. Nó dùng một vòng lặp `for` để tăng/giảm góc quay từng chút (ví dụ: 4°/bước) và chèn một độ trễ ngắn (`delay`) giữa mỗi bước.
+
+**Phân tích:** Kỹ thuật này biến một chuyển động tức thời, giật cục thành **chuyển động mượt mà, có gia tốc**.
+
+- **Điểm mạnh:** Bảo vệ cơ cấu cơ khí khỏi các cú sốc đột ngột, giảm nhiễu điện và sụt áp hệ thống, tăng độ chính xác cho thao tác tinh vi như đẩy nhẹ bóng.  
+- **Điểm yếu:** Thời gian thực hiện hành động dài hơn so với lệnh trực tiếp.  
+- **Lý do sử dụng:** Cần cho các nhiệm vụ đòi hỏi sự chính xác, nhẹ nhàng, đồng thời tăng tuổi thọ cho servo và cơ cấu cơ khí.
+
+---
+
+### 3️⃣ Thuật toán Hãm Motor bằng Ngắn mạch Mức cao
+**Thuật toán:**  
+Khi người điều khiển nhả nút nâng/hạ, thay vì chỉ ngắt điện (để motor quay tự do), chương t
 
 
