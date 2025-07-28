@@ -16,6 +16,8 @@ Trọng tâm chính của chúng tôi là phát triển **hệ thống điều k
 - Tích hợp cảm biến và servo để robot tương tác với vật thể thông minh
 
 ---
+<img width="957" height="857" alt="image" src="https://github.com/user-attachments/assets/4c46d4f6-2d46-4fd8-b755-486891d12e42" />
+![Uploading image.png…]()
 
 ### 🔁 Các bước phát triển hệ thống phần mềm
 
