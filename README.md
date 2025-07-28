@@ -17,7 +17,8 @@ Trọng tâm chính của chúng tôi là phát triển **hệ thống điều k
 
 ---
 <img width="957" height="857" alt="image" src="https://github.com/user-attachments/assets/4c46d4f6-2d46-4fd8-b755-486891d12e42" />
-![Uploading image.png…]()
+<img width="1000" height="740" alt="image" src="https://github.com/user-attachments/assets/1440888b-445d-4a9d-a6eb-c3d4743c8efd" />
+
 
 ### 🔁 Các bước phát triển hệ thống phần mềm
 
